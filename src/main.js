@@ -108,6 +108,12 @@ cardNumberMask.on("accept", () => {
     ccNumber.innerText = cardNumberMask.value.length === 0 ? "1234 5678 9037 3911" : cardNumberMask.value;
 });
 
+expDateMask.on("accept", () => {
+    const ccExpiration = document.querySelector(".cc-extra .value");
+
+    ccExpiration.innerText = expDateMask.value.length === 0 ? "02/32" : expDateMask.value;
+});
+
 
 
 
