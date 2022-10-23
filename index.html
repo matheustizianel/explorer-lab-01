@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script defer type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div id="app">
@@ -105,17 +107,17 @@
           <span><img src="/cc-icon.svg" alt="ícone padrão de cartão" /></span>
           <span
             ><img
-              src="/cc-visa.svg"
+              src="/cc-default.svg"
               alt="ícone do cartão de crédito selecionado"
           /></span>
         </div>
 
         <div class="cc-info">
-          <div class="cc-number">1234 5678 9012 3456</div>
+          <div class="cc-number">1234 5678 9037 3911</div>
 
           <div class="cc-holder">
             <div class="label">Nome do titular</div>
-            <div class="value">FULANO DA SILVA</div>
+            <div class="value">NAME ON CARD</div>
           </div>
 
           <div class="cc-extra">
@@ -125,7 +127,7 @@
             </div>
             <div class="cc-security">
               <div class="label">CVC</div>
-              <div class="value">123</div>
+              <div class="value">1234</div>
             </div>
             <img src="/cc-chip.svg" alt="ícone de chip de cartão de crédito" />
           </div>
@@ -155,10 +157,8 @@
           </div>
         </div>
 
-        <button>ADICIONAR CARTÃO</button>
+        <button id="add-card">ADICIONAR CARTÃO</button>
       </form>
     </div>
-
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
